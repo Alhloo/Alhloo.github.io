@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Cairo";
+  src: url(Cairo/Cairo-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.header {
+  gap: 15px;
+  height: 60px;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.header .bx,
+.bx-x {
+  color: #444;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+}
+.header .logo {
+  width: 100%;
+}
+.header img {
+  width: 34px;
+  height: 34px;
+}
+.menu {
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  transition: 0.3s;
+  background: #fff;
+}
+.menu.open {
+  left: 0;
+  border-right: 1px solid #ddd;
+}
+.closeMenuBtn {
+  padding: 10px;
+  text-align: right;
+}
+
