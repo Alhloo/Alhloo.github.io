@@ -61,6 +61,7 @@ input:valid ~ label {
 }
 .forget {
   color: #0db865;
+  font-size: 14px;
   padding-bottom: 20px;
 }
 label {
@@ -86,6 +87,7 @@ button {
 }
 .sign-up {
   padding: 20px;
+  font-size: 14px;
   text-align: center;
 }
 .sign-up span {
