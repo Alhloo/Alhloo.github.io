@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("192.168.1.7", "root", "root", "ximgs");
+$con = mysqli_connect("github.com", "root", "root", "ximgs");
 
 if (!$con) {
   echo "Database connection failed: " . mysqli_connect_error();
