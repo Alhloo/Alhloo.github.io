@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.header {
+  height: 60px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.all {
+  position: relative;
+}
+.all::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #000;
+  position: absolute;
+  border-radius: 5px;
+  bottom: -5px;
+}
+.upload {
+  inset: 0;
+  opacity: 0;
+  position: fixed;
+  background: #fff;
+  pointer-events: none;
+}
+.upload.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.upload-header {
+  gap: 10px;
+  height: 60px;
+  display: flex;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.bx-send {
+  font-size: 18px;
+  margin-left: auto;
+}
+.bx-left-arrow-alt {
+  font-size: 20px;
+}
+.preview {
+  aspect-ratio: 16 / 9;
+}
+.preview img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  aspect-ratio: 16 / 9;
+}
+.title {
+  margin: 20px auto;
+  width: max-content;
+  position: relative;
+}
+.title input {
+  outline: 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.title input:focus {
+  border: 1px solid #0c66aa;
+}
+.title input:focus ~ label {
+  top: 0;
+  color: #0c66aa;
+  font-size: 14px;
+}
+.title input:valid ~ label {
+  top: 0;
+  font-size: 14px;
+}
+label {
+  top: 50%;
+  left: 10px;
+  color: gray;
+  padding: 0 5px;
+  background: #fff;
+  transition: 0.2s;
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+ul {
+  gap: 0;
+  columns: 2;
+  padding: 5px;
+  list-style: none;
+}
+li {
+  padding: 5px;
+}
+li img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.view {
+  aspect-ratio: 16 / 9;
+}
+.view img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  aspect-ratio: 16 / 9;
+}
